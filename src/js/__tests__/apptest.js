@@ -1,6 +1,10 @@
 import orderByProps from '../app.js'
 
-const obj = {name: 'мечник', health: 10, level: 2, attack: 80, defence: 40}
+
+
+test('orderByProps', () => {
+
+  const obj = {name: 'мечник', health: 10, level: 2, attack: 80, defence: 40}
 const myarray = ["name", "level"]
 const result2 = [
   { key: 'name', value: 'мечник' },
@@ -10,7 +14,6 @@ const result2 = [
   { key: 'health', value: 10 }
 ]
 
-test('orderByProps', () => {
 
   const x = orderByProps(obj,myarray);
     
